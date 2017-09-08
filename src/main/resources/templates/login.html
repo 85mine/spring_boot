@@ -4,21 +4,15 @@
 <body>
 <h1>Login</h1>
 <h3>Enter user name and password:</h3>
-<form action="/login" method="POST">
+<form action="/j_spring_security_check" method="POST" commandName="loginForm">
     <table>
         <tr>
             <td>User:</td>
             <td><input type="text" name="username" id="username"/></td>
-            <td>
-                <!--<form:errors path="username" cssStyle="color:red;display:block"></form:errors>-->
-            </td>
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input type="text" name="password" id="password"/></td>
-            <td>
-                <!--<form:errors path="password" cssStyle="color:red;display:block"></form:errors>-->
-            </td>
+            <td><input type="password" name="password" id="password"/></td>
         </tr>
         <tr>
             <td><input name="submit" type="submit" value="submit"/></td>
