@@ -15,7 +15,7 @@ public class UserDaoImpl implements UserDao {
     JdbcTemplate jdbcTemplate;
 
     public void create(User user) {
-        String sql = "insert into users values(?,?,?,?,?,?,?)";
-        jdbcTemplate.update(sql, new Object[]{user.getUsername(), user.getPassword(), user.getFirstname(), user.getLastname(), user.getEmail(), user.getAddress(), user.getPhone()});
+        String sql = "insert into users values(?,?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sql, new Object[]{user.getUsername(), user.getPassword(), user.getFirstname(), user.getLastname(), user.getEmail(), user.getAddress(), user.getPhone(),1});
     }
 }
